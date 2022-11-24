@@ -1,0 +1,9 @@
+body {
+    background: #131313;
+}
+
+.header {
+    height: 60px;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(2.5px);
+}
