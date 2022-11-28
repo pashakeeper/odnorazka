@@ -87,7 +87,7 @@ $(document).ready(function () {
         var new_value = parseInt(value) + 1;
         $(this).parent('.calc').find('input').val(new_value);
         if (new_value > 1) {
-            $(this).parent('.calc').find('.calc__minus').removeClass('disabled');
+            $(this).parent('.calc').find('.minus').removeClass('disabled');
         }
         $(this).parent('.calc').next('.product-cart__btn').attr('data-count', new_value);
         return false;
@@ -210,4 +210,18 @@ $(document).ready(function () {
         });
     });
     $('#cart').simpleCart();
+    $('.main_menu li a').click(function () {
+        var target = $(this.hash);
+        if (target.length) {
+            var tt = target.offset().top - $('#header').innerHeight() - 30;
+            $('html, body').animate({
+                scrollTop: tt
+            }, 1500);
+
+            $('body').removeClass('menu-open');
+            $('.header-nav').removeClass('active');
+            $('.mobile-trigger').removeClass('is-active');
+            return false;
+        }
+    });
 });

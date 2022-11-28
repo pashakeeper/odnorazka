@@ -51,9 +51,9 @@
                     <nav>
                         <ul class="nav main_menu">
                             <li><a href="#section_02">Каталог</a></li>
-                            <li><a href="#">Преимущества</a></li>
-                            <li><a href="#">Польза</a></li>
-                            <li><a href="#">Как заказать</a></li>
+                            <li><a href="#section_03">Преимущества</a></li>
+                            <li><a href="#section_04">Польза</a></li>
+                            <li><a href="#section_06">Как заказать</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -67,7 +67,7 @@
                         <span></span>
                         <span></span>
                     </div>
-                    <a href="#" class="button_custom">заказать сейчас</a>
+                    <a href="#modalCart" data-bs-toggle="modal" class="button_custom">заказать сейчас</a>
                 </div>
             </div>
         </div>
@@ -79,9 +79,9 @@
         <p class="mobile_menu__text">Электронные сигареты с мощной батареей</p>
         <ul class="nav main_menu">
             <li><a href="#section_02">Каталог</a></li>
-            <li><a href="#">Преимущества</a></li>
-            <li><a href="#">Польза</a></li>
-            <li><a href="#">Как заказать</a></li>
+            <li><a href="#section_03">Преимущества</a></li>
+            <li><a href="#section_04">Польза</a></li>
+            <li><a href="#section_06">Как заказать</a></li>
         </ul>
         <a href="#" class="button_custom">заказать</a>
         <img class="close_mobile" src="img/Close.svg" alt="">
@@ -145,7 +145,7 @@
                                 <div class="col-lg-6">
                                     <p class="price_title">Стоимость:</p>
                                     <p class="pod_box__price"><span>670 </span>MXN</p>
-                                    <a href="#" class="button_custom">Добавить в корзину</a>
+                                    <a href="#" class="button_custom js-to-cart">Добавить в корзину</a>
                                 </div>
                             </div>
                         </div>
@@ -520,7 +520,7 @@
                         Polanco V Secc, Miguel Hidalgo, 11560 Ciudad de México, CDMX, Mexico</p>
                     <ul class="nav footer_links">
                         <li><a href="#modalPrivacy" data-bs-toggle="modal">Secreto personal</a></li>
-                        <li><a href="#modalTerms">Términos y Condiciones</a></li>
+                        <li><a href="#modalTerms" data-bs-toggle="modal">Términos y Condiciones</a></li>
                     </ul>
                     <p class="copyright">Reservados todos los derechos. Copyright 2022</p>
                 </div>
@@ -537,8 +537,27 @@
                 <a href="#" class="cart_close" data-bs-dismiss="modal"><img src="img/Close.svg" alt=""></a>
                 <div class="modal-body">
                     <div class="row cart_item">
-                        <div class="col-lg-8">
-                            <div class="row" id="#cart">
+                        <div class="col-lg-8" id="#cart">
+                            <div class="row cart_item__row">
+                                <div class="col-lg-6 p-0 d-flex">
+                                    <img class="cart_img" src="img/cart-img1.png" alt="">
+                                    <div class="cart_text__side">
+                                        <h5>Banana Ice</h5>
+                                        <p>Электронное устройство</p>
+                                        <a href="#">Удалить из корзины <img src="img/small_close.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 d-flex flex-wrap justify-content-end p-0">
+                                    <div class="calc">
+                                        <div class="minus control">-</div>
+                                        <input class="quant_prod" value="1">
+                                        <div class="plus control">+</div>
+                                    </div>
+                                    <div class="product-cart__btn"></div>
+                                    <div class="cost">Стоимость: <span>670 MXN</span></div>
+                                </div>
+                            </div>
+                            <div class="row cart_item__row">
                                 <div class="col-lg-6 p-0 d-flex">
                                     <img class="cart_img" src="img/cart-img1.png" alt="">
                                     <div class="cart_text__side">
@@ -558,7 +577,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 pr-0">
                             <div class="all_summ">
                                 <p>Общая сумма</p>
                                 <span>6700 MXN</span>
@@ -575,17 +594,26 @@
                             <form class="form-cart" action="POST">
                                 <p class="form_text">Введите ваши данные, и наш менеджер свяжется с вами в ближайшее
                                     время для уточнения деталей заказа</p>
-                                <label for="">Ваше имя</label>
-                                <input type="text" name="name" id="name" class="form-input">
-                                <label for="">Ваш контактный телефон</label>
-                                <input type='tel' name="phone" id="phone" class="form-input"
-                                    placeholder="+52(___) ___ __ __">
+                                <div class="form-col">
+                                    <label for="">Ваше имя</label>
+                                    <input type="text" name="name" id="name" class="form-input" placeholder="Your Name">
+                                </div>
+                                <div class="form-col">
+                                    <label for="">Ваш контактный телефон</label>
+                                    <input type='tel' name="phone" id="phone" class="form-input"
+                                        placeholder="+52(___) ___ __ __">
+                                </div>
                                 <a href="#" type="button" class="button_custom">Оформить</a>
                                 <div class="form_copyright">
-                                    <p>Нажимая кнопку “Заказать”, вы соглашаетесь с <a href="#"> Политикой
-                                            конфиденциальности</a> и <br> <a href="">Условиями и положениями</a></p>
+                                    <p>Нажимая кнопку “Заказать”, вы соглашаетесь с <a href="#modalPrivacy"
+                                            data-bs-toggle="modal"> Политикой
+                                            конфиденциальности</a> и <br> <a href="#modalTerms"
+                                            data-bs-toggle="modal">Условиями и положениями</a></p>
                                 </div>
                             </form>
+                            <p class="mobile_close_text" data-bs-dismiss="modal"><img src="img/arrow-dismiss.svg"
+                                    alt=""> вернуться к покупкам
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -614,11 +642,11 @@
     </div>
     <!-- Modal terms -->
     <div class="modal fade" id="modalTerms" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
             <div class="modal-content">
                 <a href="#" class="close" data-bs-dismiss="modal"><img src="img/Close.svg" alt=""></a>
                 <div class="modal-body">
-                    <>
+                    <p>
                         <b>Términos y condiciones</b>
                         Al acceder a este sitio web asumimos que acepta estos términos y condiciones. No continúe
                         utilizando Our Market si no está de acuerdo con todos los términos y condiciones establecidos en
@@ -778,7 +806,7 @@
                         las responsabilidades que surjan por contrato, agravio y por incumplimiento del deber legal.
                         Siempre que el sitio web y la información y los servicios en el sitio web se proporcionen de
                         forma gratuita, no seremos responsables de ninguna pérdida o daño de ningún tipo.
-                        </p>
+                    </p>
                 </div>
             </div>
         </div>

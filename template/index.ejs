@@ -124,153 +124,160 @@
                 <div class="col-lg-12">
                     <h2>Выбирай, что тебе по вкусу!</h2>
                 </div>
-                <div class="col-lg-12">
-                    <div class="pod_box">
-                        <div class="image_side">
-                            <img src="img/banana_ice1.png" alt="">
-                            <img src="img/banana_ice2.png" alt="">
-                        </div>
-                        <div class="text_side">
-                            <h3 class="yellow">Banana Ice </h3>
-                            <p>Электронное устройство</p>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <p>Характеристики устройства:</p>
-                                    <ul class="nav character">
-                                        <li><span>800</span>puffs</li>
-                                        <li><span>3,2</span>ml</li>
-                                        <li><span>5%</span>salt nic</li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-6">
-                                    <p class="price_title">Стоимость:</p>
-                                    <p class="pod_box__price"><span>670 </span>MXN</p>
-                                    <a href="#" class="button_custom">Добавить в корзину</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="pod_box">
-                        <div class="image_side">
-                            <img src="img/pina-colada1.png" alt="">
-                            <img src="img/pina-colada2.png" alt="">
-                        </div>
-                        <div class="text_side">
-                            <h3 class="blue">Pina Colada</h3>
-                            <p>Электронное устройство</p>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <p>Характеристики устройства:</p>
-                                    <ul class="nav character">
-                                        <li><span>800</span>puffs</li>
-                                        <li><span>3,2</span>ml</li>
-                                        <li><span>5%</span>salt nic</li>
-                                    </ul>
-                                    <p class="market_text">Покупай 10 штук со скидкой <span>25%</span> и экономь от
-                                        <span>1675 </span>MXN!
-                                    </p>
-                                </div>
-                                <div class="col-lg-6">
-                                    <p class="price_title">Стоимость:</p>
-                                    <p class="pod_box__price"><span>670 </span>MXN</p>
-                                    <a href="#" class="button_custom btn__blue">Добавить в корзину</a>
+                <% products.forEach(function(product, pindex){ %>
+                    <%- include('partials/product', {product: product, currency: currency, pindex:pindex}) %>
+                        <% }); %>
+                            <div class="col-lg-12">
+                                <div class="pod_box">
+                                    <div class="image_side">
+                                        <img src="img/banana_ice1.png" alt="">
+                                        <img src="img/banana_ice2.png" alt="">
+                                    </div>
+                                    <div class="text_side">
+                                        <h3 class="yellow">Banana Ice </h3>
+                                        <p>Электронное устройство</p>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <p>Характеристики устройства:</p>
+                                                <ul class="nav character">
+                                                    <li><span>800</span>puffs</li>
+                                                    <li><span>3,2</span>ml</li>
+                                                    <li><span>5%</span>salt nic</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <p class="price_title">Стоимость:</p>
+                                                <p class="pod_box__price"><span>670 </span>MXN</p>
+                                                <a href="#" class="button_custom">Добавить в корзину</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="pod_box">
-                        <div class="image_side">
-                            <img src="img/watermelon1.png" alt="">
-                            <img src="img/watermelon2.png" alt="">
-                        </div>
-                        <div class="text_side">
-                            <h3 class="red">Watermelon Ice</h3>
-                            <p>Электронное устройство</p>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <p>Характеристики устройства:</p>
-                                    <ul class="nav character">
-                                        <li><span>800</span>puffs</li>
-                                        <li><span>3,2</span>ml</li>
-                                        <li><span>5%</span>salt nic</li>
-                                    </ul>
-                                    <p class="market_text">Покупай 10 штук со скидкой <span>25%</span> и экономь от
-                                        <span>1675 </span>MXN!
-                                    </p>
-                                </div>
-                                <div class="col-lg-6">
-                                    <p class="price_title">Стоимость:</p>
-                                    <p class="pod_box__price"><span>670 </span>MXN</p>
-                                    <a href="#" class="button_custom btn__red">Добавить в корзину</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="pod_box">
-                        <div class="image_side">
-                            <img src="img/mint1.png" alt="">
-                            <img src="img/mint2.png" alt="">
-                        </div>
-                        <div class="text_side">
-                            <h3 class="green">Cool Mint</h3>
-                            <p>Электронное устройство</p>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <p>Характеристики устройства:</p>
-                                    <ul class="nav character">
-                                        <li><span>800</span>puffs</li>
-                                        <li><span>3,2</span>ml</li>
-                                        <li><span>5%</span>salt nic</li>
-                                    </ul>
-                                    <p class="market_text">Покупай 10 штук со скидкой <span>25%</span> и экономь от
-                                        <span>1675 </span>MXN!
-                                    </p>
-                                </div>
-                                <div class="col-lg-6">
-                                    <p class="price_title">Стоимость:</p>
-                                    <p class="pod_box__price"><span>670 </span>MXN</p>
-                                    <a href="#" class="button_custom">Добавить в корзину</a>
+                            <div class="col-lg-12">
+                                <div class="pod_box">
+                                    <div class="image_side">
+                                        <img src="img/pina-colada1.png" alt="">
+                                        <img src="img/pina-colada2.png" alt="">
+                                    </div>
+                                    <div class="text_side">
+                                        <h3 class="blue">Pina Colada</h3>
+                                        <p>Электронное устройство</p>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <p>Характеристики устройства:</p>
+                                                <ul class="nav character">
+                                                    <li><span>800</span>puffs</li>
+                                                    <li><span>3,2</span>ml</li>
+                                                    <li><span>5%</span>salt nic</li>
+                                                </ul>
+                                                <p class="market_text">Покупай 10 штук со скидкой <span>25%</span> и
+                                                    экономь от
+                                                    <span>1675 </span>MXN!
+                                                </p>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <p class="price_title">Стоимость:</p>
+                                                <p class="pod_box__price"><span>670 </span>MXN</p>
+                                                <a href="#" class="button_custom btn__blue">Добавить в корзину</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="pod_box">
-                        <div class="image_side">
-                            <img src="img/guava1.png" alt="">
-                            <img src="img/guava2.png" alt="">
-                        </div>
-                        <div class="text_side">
-                            <h3 class="yellow">Guava Ice</h3>
-                            <p>Электронное устройство</p>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <p>Характеристики устройства:</p>
-                                    <ul class="nav character">
-                                        <li><span>800</span>puffs</li>
-                                        <li><span>3,2</span>ml</li>
-                                        <li><span>5%</span>salt nic</li>
-                                    </ul>
-                                    <p class="market_text">Покупай 10 штук со скидкой <span>25%</span> и экономь от
-                                        <span>1675 </span>MXN!
-                                    </p>
-                                </div>
-                                <div class="col-lg-6">
-                                    <p class="price_title">Стоимость:</p>
-                                    <p class="pod_box__price"><span>670 </span>MXN</p>
-                                    <a href="#" class="button_custom">Добавить в корзину</a>
+                            <div class="col-lg-12">
+                                <div class="pod_box">
+                                    <div class="image_side">
+                                        <img src="img/watermelon1.png" alt="">
+                                        <img src="img/watermelon2.png" alt="">
+                                    </div>
+                                    <div class="text_side">
+                                        <h3 class="red">Watermelon Ice</h3>
+                                        <p>Электронное устройство</p>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <p>Характеристики устройства:</p>
+                                                <ul class="nav character">
+                                                    <li><span>800</span>puffs</li>
+                                                    <li><span>3,2</span>ml</li>
+                                                    <li><span>5%</span>salt nic</li>
+                                                </ul>
+                                                <p class="market_text">Покупай 10 штук со скидкой <span>25%</span> и
+                                                    экономь от
+                                                    <span>1675 </span>MXN!
+                                                </p>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <p class="price_title">Стоимость:</p>
+                                                <p class="pod_box__price"><span>670 </span>MXN</p>
+                                                <a href="#" class="button_custom btn__red">Добавить в корзину</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                            <div class="col-lg-12">
+                                <div class="pod_box">
+                                    <div class="image_side">
+                                        <img src="img/mint1.png" alt="">
+                                        <img src="img/mint2.png" alt="">
+                                    </div>
+                                    <div class="text_side">
+                                        <h3 class="green">Cool Mint</h3>
+                                        <p>Электронное устройство</p>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <p>Характеристики устройства:</p>
+                                                <ul class="nav character">
+                                                    <li><span>800</span>puffs</li>
+                                                    <li><span>3,2</span>ml</li>
+                                                    <li><span>5%</span>salt nic</li>
+                                                </ul>
+                                                <p class="market_text">Покупай 10 штук со скидкой <span>25%</span> и
+                                                    экономь от
+                                                    <span>1675 </span>MXN!
+                                                </p>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <p class="price_title">Стоимость:</p>
+                                                <p class="pod_box__price"><span>670 </span>MXN</p>
+                                                <a href="#" class="button_custom">Добавить в корзину</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="pod_box">
+                                    <div class="image_side">
+                                        <img src="img/guava1.png" alt="">
+                                        <img src="img/guava2.png" alt="">
+                                    </div>
+                                    <div class="text_side">
+                                        <h3 class="yellow">Guava Ice</h3>
+                                        <p>Электронное устройство</p>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <p>Характеристики устройства:</p>
+                                                <ul class="nav character">
+                                                    <li><span>800</span>puffs</li>
+                                                    <li><span>3,2</span>ml</li>
+                                                    <li><span>5%</span>salt nic</li>
+                                                </ul>
+                                                <p class="market_text">Покупай 10 штук со скидкой <span>25%</span> и
+                                                    экономь от
+                                                    <span>1675 </span>MXN!
+                                                </p>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <p class="price_title">Стоимость:</p>
+                                                <p class="pod_box__price"><span>670 </span>MXN</p>
+                                                <a href="#" class="button_custom">Добавить в корзину</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
             </div>
         </div>
     </section>

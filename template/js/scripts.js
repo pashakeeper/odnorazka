@@ -210,7 +210,7 @@ $(document).ready(function () {
         });
     });
     $('#cart').simpleCart();
-    $('.scroll').click(function () {
+    $('.main_menu li a').click(function () {
         var target = $(this.hash);
         if (target.length) {
             var tt = target.offset().top - $('#header').innerHeight() - 30;
