@@ -1,210 +1,833 @@
 body {
-    background: #131313;
-    color: #fff;
-    font-family: 'Inter';
-
+  background: #131313;
+  color: #fff;
+  font-family: "Inter";
 }
 
 @media (min-width: 1200px) {
-
-    .container {
-        max-width: 1200px;
-    }
+  .container {
+    max-width: 1200px;
+  }
 }
 
 section .container {
-    box-shadow: 0px 0px 100px rgba(163, 175, 19, 0.2);
+  box-shadow: 0px 0px 100px rgba(163, 175, 19, 0.2);
 }
 
 a:hover {
-    text-decoration: none;
-    color: #282828;
+  text-decoration: none;
+  color: #282828;
 }
 
 .header {
-    height: 60px;
-    background: rgba(0, 0, 0, 0.9);
-    backdrop-filter: blur(2.5px);
-
+  height: 60px;
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(2.5px);
 }
 
 .logo {
-    background: radial-gradient(100% 100% at 50.26% 0%, #E1FF8D 0%, #ACD117 100%)
-        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-    ;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 95px;
-    width: 100%;
-    height: 20px;
+  background: radial-gradient(100% 100% at 50.26% 0%, #e1ff8d 0%, #acd117 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 95px;
+  width: 100%;
+  height: 20px;
 }
 
 .logo_desc {
-    font-weight: 300;
-    font-size: 14px;
-    margin-left: 10px;
+  font-weight: 300;
+  font-size: 14px;
+  margin-left: 10px;
 }
 
 .main_menu li {
-    margin: 0 15px;
+  margin: 0 15px;
 }
 
 .main_menu li:first-child {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .main_menu li:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .main_menu li a {
-    font-weight: 300;
-    font-size: 14px;
-    color: #fff;
-    position: relative;
+  font-weight: 300;
+  font-size: 14px;
+  color: #fff;
+  position: relative;
 }
 
 .main_menu li a::before {
-    content: "";
-    position: absolute;
-    height: 1px;
-    background: #fff;
-    width: 0;
-    transition: all .5s ease;
-    border-radius: 10px;
-    bottom: -2px;
-    left: 0;
+  content: "";
+  position: absolute;
+  height: 1px;
+  background: #fff;
+  width: 0;
+  transition: all 0.5s ease;
+  border-radius: 10px;
+  bottom: -2px;
+  left: 0;
 }
 
 .main_menu li a:hover::before {
-    width: 100%;
+  width: 100%;
 }
 
 .cart {
-    position: relative;
+  position: relative;
 }
 
 .cart span {
-    position: absolute;
-    background: radial-gradient(100% 100% at 50.26% 0%, #E1FF8D 0%, #ACD117 100%);
-    width: 20px;
-    height: 20px;
-    font-weight: 500;
-    font-size: 12px;
-    color: #282828;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    top: 0;
-    left: 14px;
-    transition: all .5s ease;
+  position: absolute;
+  background: radial-gradient(100% 100% at 50.26% 0%, #e1ff8d 0%, #acd117 100%);
+  width: 20px;
+  height: 20px;
+  font-weight: 500;
+  font-size: 12px;
+  color: #282828;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  top: 0;
+  left: 14px;
+  transition: all 0.5s ease;
 }
 
 .cart:hover span {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .button_custom {
-    background: radial-gradient(100% 100% at 50.26% 0%, #E1FF8D 0%, #ACD117 100%)
-        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-    ;
-    box-shadow: 0px 4px 10px rgba(163, 175, 19, 0.3);
-    border-radius: 15px;
-    max-width: 186px;
-    width: 100%;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    color: #282828;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    text-transform: uppercase;
-    transition: all .5s ease;
+  background: radial-gradient(100% 100% at 50.26% 0%, #e1ff8d 0%, #acd117 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 0px 4px 10px rgba(163, 175, 19, 0.3);
+  border-radius: 15px;
+  max-width: 186px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  color: #282828;
+  font-family: "Montserrat, Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
 }
 
 .button_custom:hover {
-    background: radial-gradient(100% 100% at 50.26% 0%, #F0FFC6 0%, #C7ED2D 100%)
-        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-    ;
-    opacity: 0.9;
-    box-shadow: 0px 2px 30px rgba(163, 175, 19, 0.5);
-    border-radius: 15px;
+  background: radial-gradient(100% 100% at 50.26% 0%, #f0ffc6 0%, #c7ed2d 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  opacity: 0.9;
+  box-shadow: 0px 2px 30px rgba(163, 175, 19, 0.5);
+  border-radius: 15px;
 }
 
-
 h1 {
-    font-style: italic;
-    font-weight: 500;
-    font-size: 80px;
-    line-height: 97px;
-    margin: 0;
-    margin-bottom: 47px;
-    margin-top: 90px;
-    background: radial-gradient(100% 100% at 50.26% 0%, #ABFF8D 0%, #26D20B 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    text-shadow: 0px 4px 20px rgba(38, 210, 11, 0.4);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 97px;
+  margin: 0;
+  margin-bottom: 47px;
+  margin-top: 90px;
+  background: radial-gradient(100% 100% at 50.26% 0%, #abff8d 0%, #26d20b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-shadow: 0px 4px 20px rgba(38, 210, 11, 0.4);
 }
 
 .desc {
-    font-weight: 500;
-    font-size: 24px;
-    margin-bottom: 23px;
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 23px;
 }
 
 .desc span {
-    background: radial-gradient(100% 100% at 50.26% 0%, #ABFF8D 0%, #26D20B 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    font-weight: 500;
-    font-size: 36px;
+  background: radial-gradient(100% 100% at 50.26% 0%, #abff8d 0%, #26d20b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: 500;
+  font-size: 36px;
 }
 
 .odnorazka_box {
-    position: relative;
+  position: relative;
 }
 
 .odnorazka_box::before {
-    content: "";
-    background: url("../img/Smoke.png");
-    background-position: center center;
-    position: absolute;
-    width: 701px;
-    height: 621px;
-    z-index: -1;
-    top: 80px;
-    left: -160px;
-
+  content: "";
+  background: url("../img/Smoke.png");
+  background-position: center center;
+  position: absolute;
+  width: 701px;
+  height: 621px;
+  z-index: -1;
+  top: 80px;
+  left: -160px;
 }
 
 .odnorazka_box img {
-    width: 100%;
-    max-width: 445px;
-    margin-top: 197px;
+  width: 100%;
+  max-width: 445px;
+  margin-top: 197px;
 }
 
 .section_01 .button_custom {
-    margin-left: unset;
-    margin-top: 3px;
+  margin-left: unset;
+  margin-top: 3px;
+  height: 51px;
+  max-width: 246px;
+  width: 100%;
+}
+.section_02 h2 {
+  margin-top: 105px;
+  margin-bottom: 60px;
 }
 
 .labels {
-    justify-content: space-between;
+  justify-content: space-between;
+  align-items: center;
+}
+.labels li img {
+  margin-right: 10px;
+}
+.labels li {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(33, 33, 33, 0.8);
+  backdrop-filter: blur(7.5px);
+  border-radius: 15px;
+}
+h2 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  background: radial-gradient(100% 100% at 50.26% 0%, #e1ff8d 0%, #acd117 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-shadow: 0px 0px 30px rgba(131, 249, 102, 0.6);
+  text-align: center;
+}
+.pod_box {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  background: #000000;
+  box-shadow: 0px 4px 30px rgba(196, 230, 76, 0.1);
+  border-radius: 30px;
+  margin-bottom: 30px;
+  height: 250px;
+  transition: all 0.5s ease;
+}
+.pod_box:hover {
+  transform: translateY(-10px);
+}
+.image_side img {
+  max-width: 250px;
+  width: 100%;
+}
+.image_side img:first-child {
+  border-radius: 31px 0px 0px 31px;
+}
+.image_side img:last-child {
+  border-radius: 0px 31px 31px 0px;
+  margin-left: -4px;
+}
+h3 {
+  font-weight: 500;
+  font-size: 36px;
+}
+h3.yellow {
+  /* Lemon radial */
+
+  background: radial-gradient(100% 100% at 50.26% 0%, #e1ff8d 0%, #acd117 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+h3.blue {
+  background: radial-gradient(100% 100% at 50.26% 0%, #a0d7ef 0%, #228bed 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+h3.red {
+  background: radial-gradient(100% 100% at 50.26% 0%, #ffb45b 0%, #cb0000 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+h3.green {
+  background: radial-gradient(100% 100% at 50.26% 0%, #abff8d 0%, #26d20b 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.btn__red {
+  background: radial-gradient(100% 100% at 50.26% 0%, #ffb45b 0%, #cb0000 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 0px 4px 10px rgba(175, 19, 19, 0.3);
+  border-radius: 15px;
+}
+.btn__red:hover {
+  background: radial-gradient(100% 100% at 50.26% 0%, #ffc581 0%, #f43131 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  opacity: 0.9;
+  box-shadow: 0px 2px 30px rgba(175, 19, 19, 0.7);
+  border-radius: 15px;
+}
+.btn__green {
+  background: radial-gradient(100% 100% at 50.26% 0%, #72ff5b 0%, #148c00 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 0px 4px 10px rgba(19, 175, 53, 0.3);
+  border-radius: 15px;
+}
+.btn__green:hover {
+  background: radial-gradient(100% 100% at 50.26% 0%, #abff8d 0%, #26d20b 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  opacity: 0.9;
+  box-shadow: 0px 2px 30px rgba(19, 175, 53, 0.5);
+}
+.btn__blue {
+  background: radial-gradient(100% 100% at 50.26% 0%, #a0d7ef 0%, #228bed 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 0px 4px 10px rgba(19, 138, 175, 0.3);
+  border-radius: 15px;
+}
+.btn__blue:hover {
+  background: radial-gradient(100% 100% at 50.26% 0%, #c7eeff 0%, #5cb1ff 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  opacity: 0.9;
+  box-shadow: 0px 2px 30px rgba(19, 138, 175, 0.5);
+  border-radius: 15px;
+}
+.market_text {
+  margin-top: 29px;
+  font-weight: 300;
+  font-size: 16px;
+}
+.market_text span {
+  font-weight: 400;
+  font-size: 24px;
+  /* Light Green radial */
+
+  background: radial-gradient(100% 100% at 50.26% 0%, #abff8d 0%, #26d20b 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.text_side {
+  padding-left: 57.5px;
+  width: 55%;
+}
+.text_side h3 {
+  margin-top: 20px;
+}
+.text_side p {
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.text_side .col-lg-6 p {
+  margin-bottom: 0;
+}
+.character {
+  font-weight: 300;
+  font-size: 16px;
+}
+.character li {
+  margin: 0 10px;
+}
+.character li:first-child {
+  margin-left: 0;
+}
+.character li:last-child {
+  margin-right: 0;
+}
+.character li span {
+  /* Light Green radial */
+
+  background: radial-gradient(100% 100% at 50.26% 0%, #abff8d 0%, #26d20b 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.price_title {
+  font-weight: 300;
+  font-size: 20px;
+  text-align: right;
+}
+.pod_box__price {
+  text-align: right;
+  font-size: 24px;
+}
+.pod_box__price span {
+  font-weight: 500;
+  font-size: 30px;
+
+  /* identical to box height, or 113% */
+
+  /* Light Green radial */
+
+  background: radial-gradient(100% 100% at 50.26% 0%, #abff8d 0%, #26d20b 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.section_02 .col-lg-12:last-child .pod_box {
+  margin-bottom: 100px;
+}
+.section_02 .button_custom {
+  max-width: 273px;
+  width: 100%;
+  margin-top: 20px;
+  height: 51px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+}
+.section_02 .button_custom:hover {
+  max-width: 186px;
+}
+.section_03 .container {
+  background: url("../img/man-bg.png");
+  background-position: center top;
+  background-size: 100% 100%;
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+.section_03 h2 {
+  line-height: 84px;
+  position: relative;
+}
+.section_03 .title_bg {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  /* Note: backdrop-filter has minimal browser support */
+  width: 100%;
+  max-width: 790px;
+  height: 84px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+.infos__labels {
+  margin-top: 80px;
+  padding: 40px;
+  gap: 20px;
+  max-width: 430px;
+  width: 100%;
+  height: 198px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 30px;
+}
+.infos__labels h3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+
+  /* Blue Radial */
+
+  background: radial-gradient(100% 100% at 50.26% 0%, #a0d7ef 0%, #228bed 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+  /* Tittle Tips */
+
+  text-shadow: 0px 0px 30px rgba(102, 189, 249, 0.6);
+  margin-bottom: 20px;
+}
+.infos__labels .info_text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+}
+.section_04 {
+}
+.section_04 .container {
+  background: url("../img/girl-bg.jpg");
+  padding-top: 80px;
+  background-position: center top;
+  background-size: cover;
+  padding-bottom: 254px;
+  background-repeat: no-repeat;
+  box-shadow: 0 -60px 100px rgb(163 175 19 / 20%);
+}
+.section_04 h2 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+.section_04 .accordion-header {
+  padding: 15px 20px;
+  gap: 10px;
+  isolation: isolate;
+  max-width: 440px;
+  width: 100%;
+  height: 62px;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  transition: all 0.5s ease;
+}
+.section_04 .accordion-header a img {
+  margin-left: auto;
+  transform: rotate(180deg);
+  transition: all 0.5s ease;
+}
+.section_04 .accordion-header a.collapsed img {
+  transform: rotate(0);
+}
+.section_04 .accordion-header a {
+  background: radial-gradient(100% 100% at 50.26% 0%, #e1ff8d 0%, #acd117 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: 500;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.section_04 .accordion-header.opened {
+  border-radius: 20px 20px 0 0;
+}
+.section_04 .accordion-body {
+  padding: 20px 15px;
+  max-width: 440px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 0 0 20px 20px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+}
+.label_box {
+  padding: 20px 20px 20px 30px;
+  max-width: 633px;
+  width: 100%;
+  height: 170px;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -395px;
+}
+.label_box .symbol {
+  background: radial-gradient(100% 100% at 50.26% 0%, #a0d7ef 0%, #228bed 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 130px;
+  width: 40%;
+}
+.label_box p {
+  max-width: 510px;
+  margin-left: 30px;
+  font-weight: 300;
+  font-size: 16px;
+}
+.section_05 h2 {
+  margin-top: 120px;
+}
+.section_05 .container {
+  background: url("../img/people-bg.jpg");
+  background-size: 1200px 800px;
+  box-shadow: 0 70px 100px rgb(163 175 19 / 20%);
+  margin-top: 250px;
+  padding-bottom: 261px;
+}
+.slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px 54px 30px;
+  max-width: 290px;
+  width: 100%;
+  height: 300px;
+  margin: 0 25px;
+  margin-top: 75px;
+  /* Black BG */
+
+  background: #131313;
+  border-radius: 15px;
+}
+.slide img {
+  width: 120px;
+  height: 120px;
+  margin-top: -25%;
+}
+.review__name {
+  background: radial-gradient(100% 100% at 50.26% 0%, #e1ff8d 0%, #acd117 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  margin-top: 19px;
+  margin-bottom: 20px;
+}
+.review {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+.section_05 .slick-track {
+  display: flex;
+}
+.section_05 .slick-list.draggable {
+  overflow-x: hidden;
+}
+.slick-arrow {
+  position: absolute;
+  bottom: -95px;
+  font-size: 0;
+  border: 0;
+  width: 10px;
+  height: 17px;
+  background-repeat: no-repeat !important;
+  z-index: 2;
+  outline: none !important;
+  cursor: pointer;
+}
+.slick-arrow.slick-prev {
+  background: url("../img/prev.svg");
+  left: 26%;
+}
+.slick-arrow.slick-next {
+  background: url("../img/next.svg");
+  right: 26%;
+}
+.slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: -95px;
+}
+.slick-dots li button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+.slick-dots li {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #ffffff;
+  display: flex;
+  font-size: 0;
+  border-radius: 50%;
+  background: transparent;
+  margin: 0 7.5px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.slick-dots li:hover {
+  background: #fff;
+}
+.slick-dots li:first-child {
+  margin-left: 0;
+}
+.slick-dots li:last-child {
+  margin-right: 0;
+}
+.slick-dots li.slick-active {
+  background: #fff;
+}
+.section_06 {
+}
+.section_06 .container {
+  background: url("../img/man-bg2.png"), #131313;
+  background-repeat: no-repeat;
+  background-position: -40px 320px;
+  padding-bottom: 130px;
+}
+.big_label__box {
+  padding: 50px;
+  max-width: 915px;
+  width: 100%;
+  height: 454px;
+  margin-top: 100px;
+  margin-bottom: 351px;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+}
+.big_label__advantages li {
+  max-width: 160px;
+  width: 100%;
+  height: 226px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+.num__box {
+  width: 120px;
+  height: 140px;
+  background: radial-gradient(
+      100% 100% at 50.26% 0%,
+      rgba(0, 165, 201, 0.9) 0%,
+      rgba(0, 66, 126, 0.9) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.num__box .num {
+  background: radial-gradient(100% 100% at 50.26% 0%, #a0d7ef 0%, #228bed 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 130px;
+  line-height: 100%;
+  font-style: italic;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  margin-right: 20px;
+}
+.last_label__box {
+  padding: 50px;
+  gap: 40px;
+  max-width: 540px;
+  width: 100%;
+  height: 255px;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+}
+.last_label__box h2 {
+  font-weight: 500;
+  font-size: 24px;
+}
+.last_label__box .button_custom {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+.footer {
+  padding: 20px 0px;
+  height: 206px;
+  background: #000000;
+}
+.footer_text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  max-width: 480px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 36px;
+}
+.footer_links {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.footer_links li {
+  margin: 0 15px;
+}
+.footer_links li a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+  text-decoration-line: underline;
+  color: #ffffff;
+}
+.copyright {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
 }
