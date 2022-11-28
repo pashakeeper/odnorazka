@@ -1,0 +1,142 @@
+{
+	"id": 102,
+	"advertiserId": 1,
+	"offerName": "parumes for fb 2x",
+	"offerDescription": "fb",
+	"offerCategory": 7,
+	"geo": 1,
+	"language": 230,
+	"currency": 484,
+	"baseRate": "7",
+	"rewardModel": 2,
+	"hold": 15,
+	"bannedSources": [
+		2
+	],
+	"offerStatus": 4,
+	"deliveryTypes": [
+		1
+	],
+	"paymentMethods": [
+		1
+	],
+	"comments": "",
+	"products": [
+		{
+			"id": 64,
+			"name": "Galaxy S21 Ultra Black",
+			"description": "<ul><li>Video suave de alta definición</li><li>Fotos de alta calidad de resoluciones populares</li><li>Pantalla de 6,8\"con profundidad de color de 16 V</li><li>Procesador de 4 núcleos Mediatek MTK 6582</li><li>Soporte para memoria externa MicroSD hasta 128 GB</li><li>Capacidad de la batería 2050 mAh</li></ul><p>EQUIPO: teléfono, caja, cargador (estándar europeo), cable USB tipo C, auriculares</p>",
+			"productImages": [
+				{
+					"id": 254,
+					"sortOrder": 1,
+					"imageId": "86a1f491-e896-44c6-a629-ce1351574d47",
+					"isDefault": false
+				}
+			],
+			"recommendedSalePrice": "4062",
+			"productCode": "",
+			"ownerOrganizationId": 1,
+			"category": 7,
+			"salePrice": "3250",
+			"productId": 64,
+			"images": [
+				{
+					"url": "img/product-1-1.png"
+				},
+				{
+					"url": "img/product-1-2.png"
+				},
+				{
+					"url": "img/product-1-3.png"
+				},
+				{
+					"url": "img/product-1-4.png"
+				},
+				{
+					"url": "img/product-1-5.png"
+				}
+			],
+			"productName": "Galaxy S21 Ultra Black",
+			"desc": "for fb"
+		},
+		{
+			"id": 65,
+			"name": "Galaxy S22 Ultra Gold",
+			"description": "<ul><li>Video suave de alta definición</li><li>Fotos de alta calidad de resoluciones populares</li><li>Pantalla de 6,8\"con profundidad de color de 16 V</li><li>Procesador de 4 núcleos Mediatek MTK 6582</li><li>Soporte para memoria externa MicroSD hasta 128 GB</li><li>Capacidad de la batería 2050 mAh</li></ul><p>EQUIPO: teléfono, caja, cargador (estándar europeo), cable USB tipo C, auriculares</p>",
+			"productImages": [
+				{
+					"id": 256,
+					"sortOrder": 1,
+					"imageId": "a4182a87-e3b9-447e-aa79-c222ab7eabe6",
+					"isDefault": false
+				}
+			],
+			"recommendedSalePrice": "4565",
+			"productCode": "",
+			"ownerOrganizationId": 1,
+			"category": 7,
+			"salePrice": "3650",
+			"productId": 65,
+			"images": [
+				{
+					"url": "img/product-2-1.png"
+				},
+				{
+					"url": "img/product-1-2.png"
+				},
+				{
+					"url": "img/product-1-3.png"
+				},
+				{
+					"url": "img/product-1-4.png"
+				},
+				{
+					"url": "img/product-1-5.png"
+				}
+			],
+			"productName": "Galaxy S22 Ultra Gold",
+			"desc": "for fb"
+		},
+		{
+			"id": 66,
+			"name": "Galaxy S22 Ultra Black",
+			"description": "<ul><li>Video suave de alta definición</li><li>Fotos de alta calidad de resoluciones populares</li><li>Pantalla de 6,8\"con profundidad de color de 16 V</li><li>Procesador de 4 núcleos Mediatek MTK 6582</li><li>Soporte para memoria externa MicroSD hasta 128 GB</li><li>Capacidad de la batería 2050 mAh</li></ul><p>EQUIPO: teléfono, caja, cargador (estándar europeo), cable USB tipo C, auriculares</p>",
+			"productImages": [
+				{
+					"id": 256,
+					"sortOrder": 1,
+					"imageId": "a4182a87-e3b9-447e-aa79-c222ab7eabe6",
+					"isDefault": false
+				}
+			],
+			"recommendedSalePrice": "4565",
+			"productCode": "",
+			"ownerOrganizationId": 1,
+			"category": 7,
+			"salePrice": "3650",
+			"productId": 66,
+			"images": [
+				{
+					"url": "img/product-3-1.png"
+				},
+				{
+					"url": "img/product-1-2.png"
+				},
+				{
+					"url": "img/product-1-3.png"
+				},
+				{
+					"url": "img/product-1-4.png"
+				},
+				{
+					"url": "img/product-1-5.png"
+				}
+			],
+			"productName": "Galaxy S22 Ultra Black",
+			"desc": "for fb"
+		}
+	],
+	"templateString": "https://c.dev.utgid.com/136/102/?cid={contract_id}",
+	"ownerOrganizationId": 1
+}
