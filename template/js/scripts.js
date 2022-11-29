@@ -71,32 +71,32 @@ $(document).ready(function () {
         $('.mobile_menu').toggleClass('active');
         $('.burger').toggleClass('active');
     })
-    $(document).on('click', '.minus', function (event) {
-        var value = $(this).parent('.calc').find('input').val();
-        var new_value = parseInt(value) - 1;
-        $(this).parent('.calc').find('input').val(new_value);
-        if (new_value < 2) {
-            $(this).addClass('disabled');
-        }
-        $(this).parent('.calc').next('.product-cart__btn').attr('data-count', new_value);
-        return false;
-    });
+    // $(document).on('click', '.minus', function (event) {
+    //     var value = $(this).parent('.calc').find('input').val();
+    //     var new_value = parseInt(value) - 1;
+    //     $(this).parent('.calc').find('input').val(new_value);
+    //     if (new_value < 2) {
+    //         $(this).addClass('disabled');
+    //     }
+    //     $(this).parent('.calc').next('.product-cart__btn').attr('data-count', new_value);
+    //     return false;
+    // });
 
-    $(document).on('click', '.plus', function (event) {
-        var value = $(this).parent('.calc').find('input').val();
-        var new_value = parseInt(value) + 1;
-        $(this).parent('.calc').find('input').val(new_value);
-        if (new_value > 1) {
-            $(this).parent('.calc').find('.minus').removeClass('disabled');
-        }
-        $(this).parent('.calc').next('.product-cart__btn').attr('data-count', new_value);
-        return false;
-    });
+    // $(document).on('click', '.plus', function (event) {
+    //     var value = $(this).parent('.calc').find('input').val();
+    //     var new_value = parseInt(value) + 1;
+    //     $(this).parent('.calc').find('input').val(new_value);
+    //     if (new_value > 1) {
+    //         $(this).parent('.calc').find('.minus').removeClass('disabled');
+    //     }
+    //     $(this).parent('.calc').next('.product-cart__btn').attr('data-count', new_value);
+    //     return false;
+    // });
 
-    $('.js-checkout').on('click', function (event) {
-        $('.popup-cart').addClass('popup-cart--checkout');
-        return false;
-    });
+    // $('.js-checkout').on('click', function (event) {
+    //     $('.popup-cart').addClass('popup-cart--checkout');
+    //     return false;
+    // });
 
 
     $.fn.selectRange = function (start, end) {
