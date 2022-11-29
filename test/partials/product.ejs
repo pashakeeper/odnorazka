@@ -1,41 +1,36 @@
 <div class="col-lg-12">
     <div class="pod_box">
-        <% product.images.forEach(function(image,index){ %>
-            <div class="image_side">
-                <img src="<%= image.url %>" data-src="<%= image.url %>" alt="<%= product.name %>" width="300"
-                    height="300" class="lazyload">
-            </div>
-            <% }); %>
 
-                <div class="text_side">
-                    <h3 class="yellow">
-                        <%= product.name %>
-                    </h3>
-                    <p>
-                        <%- product.description %>
-                    </p>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <p>Характеристики устройства:</p>
-                            <ul class="nav character">
-                                <li><span>800</span>puffs</li>
-                                <li><span>3,2</span>ml</li>
-                                <li><span>5%</span>salt nic</li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-6">
-                            <p class="price_title">Стоимость:</p>
-                            <p class="pod_box__price"><span>
-                                    <%= product.salePrice %>
-                                </span>MXN</p>
-                            <a href="#" class="button_custom js-to-cart" class="btn products-item__btn  js-to-cart"
-                                data-id="<%= product.productId %>"
-                                data-name="<%= product.name.replace('[F]','').replace('[M]','') %>"
-                                data-price="<%= parseInt(Number(product.salePrice)) %>"
-                                data-sale-price="<%= parseInt(Number(product.recommendedSalePrice)) %>" data-info=""
-                                data-value="" data-count="1">Добавить в корзину</a>
-                        </div>
-                    </div>
+
+        <div class="text_side">
+            <h3 class="yellow">
+                <%= products.name %>
+            </h3>
+            <p>
+                <%- products.description %>
+            </p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>Характеристики устройства:</p>
+                    <ul class="nav character">
+                        <li><span>800</span>puffs</li>
+                        <li><span>3,2</span>ml</li>
+                        <li><span>5%</span>salt nic</li>
+                    </ul>
                 </div>
+                <div class="col-lg-6">
+                    <p class="price_title">Стоимость:</p>
+                    <p class="pod_box__price"><span>
+                            <%= products.salePrice %>
+                        </span>MXN</p>
+                    <a href="#" class="button_custom js-to-cart" class="btn products-item__btn  js-to-cart"
+                        data-id="<%= products.id %>"
+                        data-name="<%= products.name.replace('[F]','').replace('[M]','') %>"
+                        data-price="<%= parseInt(Number(products.salePrice)) %>"
+                        data-sale-price="<%= parseInt(Number(products.recommendedSalePrice)) %>" data-info=""
+                        data-value="" data-count="1">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

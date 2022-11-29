@@ -286,6 +286,10 @@ h1 {
   font-size: 36px;
 }
 
+.desc .percent {
+  text-decoration: line-through;
+}
+
 .odnorazka_box {
   position: relative;
 }

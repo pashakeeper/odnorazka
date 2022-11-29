@@ -16,16 +16,16 @@ $(window).on('load', function () {
     });
 });
 $(document).ready(function () {
-    $('.accordion-header').click(function () {
-        if (!$(this).is('opened')) {
-            $('.accordion-header').removeClass('opened');
-            $(this).addClass('opened');
+    // $('.accordion-header').click(function () {
+    //     if (!$(this).is('opened')) {
+    //         // $('.accordion-header').removeClass('opened');
+    //         $(this).addClass('opened');
 
-        }
-        else if ($(this).is('opened')) {
-            $('.accordion-header').removeClass('opened');
-        }
-    })
+    //     }
+    //     // else if ($(this).is('opened')) {
+    //     //     $('.accordion-header').addClass('opened');
+    //     // }
+    // })
     $('.review_slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
