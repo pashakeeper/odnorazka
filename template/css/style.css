@@ -4,6 +4,14 @@ body {
   font-family: "Inter";
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1200px;
