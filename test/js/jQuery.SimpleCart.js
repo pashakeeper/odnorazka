@@ -77,7 +77,7 @@
 			}
 
 			console.log(mi._totalCartPrice(), mi._totalCartCost());
-			$('.total-cart-discount').text(Math.round(100.0 * ( mi._totalCartPrice() -  mi._totalCartCost()) / mi._totalCartCost()) + '%');
+			$('.total-cart-discount').text(Math.round(100.0 * (mi._totalCartPrice() - mi._totalCartCost()) / mi._totalCartCost()) + '%');
 			$('.total-cart-discount-cost').text(Math.round(mi._totalCartPrice()) - mi._totalCartCost());
 			$('.total-cart-total').text(Math.round(mi._totalCartPrice()));
 
@@ -180,7 +180,7 @@
 
 		},
 		/* Helper Functions */
-		_addItemToCart: function (name, price, salePrice,  count, id, image, info, value) {
+		_addItemToCart: function (name, price, salePrice, count, id, image, info, value) {
 			for (var i in this.cart) {
 				if (this.cart[i].id === id) {
 					this.cart[i].count = parseInt(this.cart[i].count) + parseInt(count);
@@ -272,7 +272,7 @@
 							</svg>\n\
 						</a>\n\
 					</div>\n\
-				<div class="cart-list-item__col cart-list-item__col--price">Precio: <div class="cart-list-item__price"><span>'+ cartArray[i].price + '</span> MXN</div><div style="display: ' + display +'" ><span style="text-decoration: line-through">'+ cartArray[i].basePrice + ' MXN</span></div></div>\n\
+				<div class="cart-list-item__col cart-list-item__col--price">Precio: <div class="cart-list-item__price"><span>'+ cartArray[i].price + '</span> MXN</div><div  class="all_discount" style="display: ' + display + '" ><span style="text-decoration: line-through">' + cartArray[i].basePrice + ' MXN</span></div></div>\n\
 				</div>\n\
 				</div>';
 			}

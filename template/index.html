@@ -100,8 +100,7 @@
                         <br>
                         por el empaque de 10 pzs
                     </p>
-                    <a href="#" data-id="1" data-name="фывфыв" data-price="112342" data-sale-price="123123" data-info=""
-                        data-value="" data-count="1" class="button_custom">Pedir ahora</a>
+                    <a href="#" class="button_custom">Pedir ahora</a>
                 </div>
                 <div class="col-lg-6 odnorazka_box">
                     <img src="img/odnorazka.png" alt="">
@@ -150,7 +149,9 @@
                                 <div class="col-lg-6">
                                     <p class="price_title">Precio:</p>
                                     <p class="pod_box__price"><span>670 </span>MXN</p>
-                                    <a href="#" class="button_custom js-to-cart">Agregar al carrito</a>
+                                    <a href="#" data-id="1" data-name="фывфыв" data-price="112342"
+                                        data-sale-price="123123" data-info="" data-value="" data-count="1"
+                                        class="button_custom js-to-cart">Agregar al carrito</a>
                                 </div>
                             </div>
                         </div>
@@ -540,10 +541,10 @@
             <div class="modal-content" id="cart">
                 <h5 class="modal-title">Ваша корзина</h5>
                 <a href="#" class="cart_close" data-bs-dismiss="modal"><img src="img/Close.svg" alt=""></a>
-                <div class="modal-body cart-list" id="show-cart">
-                    <div class="row cart_item cart-list-item">
-                        <div class="col-lg-8" id="#cart">
-                            <div class="row cart_item__row">
+                <div class="modal-body" id="show-cart">
+                    <div class="row">
+                        <div class="col-lg-8 cart-list" id="#cart">
+                            <div class="row cart_item cart_item__row cart-list-item">
                                 <div class="col-lg-6 p-0 d-flex">
                                     <img class="cart_img" src="img/cart-img1.png" alt="">
                                     <div class="cart_text__side">
@@ -588,17 +589,19 @@
                                 <span class="total-cart-cost">6700 MXN</span>
                             </div>
                             <div class="all_discount">
-                                <p>Ваша скидка<span> 25%</span></p>
-                                <span>1675 MXN</span>
+                                <p>Ваша скидка<span class="cart-total-item__discount total-cart-discount text-gradient">
+                                        25%</span></p>
+                                <span class="total-cart-discount-cost">1675 MXN</span>
                             </div>
                             <div class="all_summ_with_discount">
                                 <p>Общая сумма с учетом скидок</p>
-                                <span>5025 </span>
+                                <span class="total-cart-total">5025 </span>
                                 <p class="valut"> MXN</p>
                             </div>
-                            <form class="form-cart" action="POST">
-                                <p class="form_text">Введите ваши данные, и наш менеджер свяжется с вами в ближайшее
-                                    время для уточнения деталей заказа</p>
+                            <form class="form form-cart" novalidate="novalidate">
+                                <p class="form_text">**No incluye el costo de entrega**
+                                    Ingresa tus datos y nuestro gerente se comunicará contigo en breve para los detalles
+                                    de tu orden</p>
                                 <div class="form-col">
                                     <label for="">Ваше имя</label>
                                     <input type="text" name="name" id="name" class="form-input" placeholder="Your Name">
@@ -625,6 +628,7 @@
             </div>
         </div>
     </div>
+    <div class="popup-product"></div>
     <!-- Modal Privacy policy -->
     <div class="modal fade" id="modalPrivacy" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
