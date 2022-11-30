@@ -109,7 +109,7 @@
 					var $image = $('<img width="90px" height="90px" src="' + image + '"/>').css({ "position": "fixed", "z-index": "999", "top": eTop + "px", "left": eLeft + "px" });
 					$(this).parents('.products-item').prepend($image);
 				} else {
-					var eTop = $(this).parents('.popup-product').offset().top - $(window).scrollTop();
+					var eTop = $(this).parents('.popup-product').offset().top() - $(window).scrollTop();
 					var eLeft = $(this).parents('.popup-product').offset().left;
 					var $image = $('<img width="90px" height="90px" src="' + image + '"/>').css({ "position": "fixed", "z-index": "999", "top": eTop + "px", "left": eLeft + "px" });
 					$(this).parents('.popup-product').prepend($image);
@@ -167,7 +167,7 @@
 
 
 			$(document).on('click', '.calc-remove', function (event) {
-				var inp = $(this).prev('.calc').find('input');
+				var inp = $('.calc').find('input');
 				var count = 0;
 				var name = inp.attr("data-name");
 				var id = inp.attr("data-id");
@@ -253,28 +253,30 @@
 					display = 'block'
 				}
 
-				output += '<div class="cart-list-item">\n\
+				output += '<div class=" row cart_item cart_item__row cart-list-item">\n\
+					<div class="col-lg-6 p-0 d-flex">\n\
 					<div class="cart-list-item__col cart-list-item__col--image">\n\
-						<img src="' + cartArray[i].image + '" alt="">\n\
+						<img class="cart_img" src="' + cartArray[i].image + '" alt="IMAGE">\n\
 					</div>\n\
-					<div class="cart-list-item__col cart-list-item__col--text">\n\
-						<div class="cart-list-item__title">' + cartArray[i].name + '</div>\n\
-						<div class="cart-list-item__subtitle">'+ cartArray[i].info + ' <span>' + cartArray[i].value + '</span></div>\n\
-					</div>\n\
-					<div class="cart-list-item__col cart-list-item__col--calc">\n\
-						<div class="cart-calc calc">\n\
-							<a href="#" class="calc__btn calc__minus '+ disabled + '">-</a>\n\
-							<input type="number" name="number" value="'+ cartArray[i].count + '"  data-name="' + cartArray[i].name + '" data-price="' + cartArray[i].price + '" data-id="' + cartArray[i].id + '" data-value="' + cartArray[i].value + '" class="calc__input  item-count" maxlength="1">\n\
-							<a href="#" class="calc__btn calc__plus">+</a>\n\
-						</div>\n\
-						<a href="#" class="calc-remove">Quitar del carrito<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">\n\
-								<path d="M15 5.875L14.125 5L10 9.125L5.875 5L5 5.875L9.125 10L5 14.125L5.875 15L10 10.875L14.125 15L15 14.125L10.875 10L15 5.875Z" />\n\
-							</svg>\n\
+					<div class=" cart_text__side cart-list-item__col cart-list-item__col--text">\n\
+						<h5 class="cart-list-item__title">' + cartArray[i].name + '</h5>\n\
+						<p class="cart-list-item__subtitle">'+ cartArray[i].info + ' <span>' + cartArray[i].value + '</span></p>\n\
+				<a href="#" class="calc-remove">Quitar del carrito <img src="img/small_close.svg" alt="">\n\
 						</a>\n\
 					</div>\n\
-				<div class="cart-list-item__col cart-list-item__col--price">Precio: <div class="cart-list-item__price"><span>'+ cartArray[i].price + '</span> MXN</div><div  class="all_discount" style="display: ' + display + '" ><span style="text-decoration: line-through">' + cartArray[i].basePrice + ' MXN</span></div></div>\n\
+					</div>\n\
+					<div class=" col-lg-6 d-flex flex-wrap justify-content-end p-0 cart-list-item__col cart-list-item__col--calc">\n\
+						<div class="cart-calc calc">\n\
+							<a href="#" class="calc__btn calc__minus minus control '+ disabled + '">-</a>\n\
+							<input class="quant_prod item-count" type="number" name="number" value="'+ cartArray[i].count + '"  data-name="' + cartArray[i].name + '" data-price="' + cartArray[i].price + '" data-id="' + cartArray[i].id + '" data-value="' + cartArray[i].value + '" class="calc__input  item-count" maxlength="1">\n\
+							<a href="#" class="calc__btn calc__plus plus control">+</a>\n\
+						</div>\n\
+						<div class="cost">Стоимость: <span>'+ cartArray[i].price + ' MXN</span></div>\n\
+					</div>\n\
 				</div>\n\
-				</div>';
+				</div>\n\
+				';
+
 			}
 			return output;
 		},

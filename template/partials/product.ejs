@@ -1,5 +1,11 @@
 <div class="col-lg-12">
     <div class="pod_box">
+        <div class="image_side">
+            <% product.images.forEach(function(image,index){ %>
+                <img src="<%= image.url %>" data-src="<%= image.url %>" alt="<%= product.name %>" width="300"
+                    height="300" class="lazyload" />
+                <% }); %>
+        </div>
         <div class="text_side">
             <h3 class="yellow">
                 <%= products.name %>
@@ -9,7 +15,7 @@
             </p>
             <div class="row">
                 <div class="col-lg-6">
-                    <p>Характеристики устройства:</p>
+                    <p>Especificaciones del dispositivo:</p>
                     <ul class="nav character">
                         <li><span>800</span>puffs</li>
                         <li><span>3,2</span>ml</li>
@@ -17,7 +23,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-6">
-                    <p class="price_title">Стоимость:</p>
+                    <p class="price_title">Coste:</p>
                     <p class="pod_box__price"><span>
                             <%= products.salePrice %>
                         </span>MXN</p>
