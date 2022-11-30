@@ -31,6 +31,9 @@ a:hover {
   height: 60px;
   background: rgba(0, 0, 0, 0.9);
   backdrop-filter: blur(2.5px);
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 .logo {
@@ -232,7 +235,8 @@ a:hover {
 
 .button_custom {
   background: radial-gradient(100% 100% at 50.26% 0%, #e1ff8d 0%, #acd117 100%)
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
   box-shadow: 0px 4px 10px rgba(163, 175, 19, 0.3);
   border-radius: 15px;
   max-width: 186px;
@@ -253,7 +257,8 @@ a:hover {
 
 .button_custom:hover {
   background: radial-gradient(100% 100% at 50.26% 0%, #f0ffc6 0%, #c7ed2d 100%)
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
   opacity: 0.9;
   box-shadow: 0px 2px 30px rgba(163, 175, 19, 0.5);
   border-radius: 15px;
@@ -354,7 +359,8 @@ h2 {
   font-size: 36px;
   line-height: 44px;
   background: radial-gradient(100% 100% at 50.26% 0%, #e1ff8d 0%, #acd117 100%)
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -402,7 +408,8 @@ h3.yellow {
   /* Lemon radial */
 
   background: radial-gradient(100% 100% at 50.26% 0%, #e1ff8d 0%, #acd117 100%)
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -411,7 +418,8 @@ h3.yellow {
 
 h3.blue {
   background: radial-gradient(100% 100% at 50.26% 0%, #a0d7ef 0%, #228bed 100%)
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -420,7 +428,8 @@ h3.blue {
 
 h3.red {
   background: radial-gradient(100% 100% at 50.26% 0%, #ffb45b 0%, #cb0000 100%)
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -429,7 +438,8 @@ h3.red {
 
 h3.green {
   background: radial-gradient(100% 100% at 50.26% 0%, #abff8d 0%, #26d20b 100%)
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -438,14 +448,16 @@ h3.green {
 
 .btn__red {
   background: radial-gradient(100% 100% at 50.26% 0%, #ffb45b 0%, #cb0000 100%)
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
   box-shadow: 0px 4px 10px rgba(175, 19, 19, 0.3);
   border-radius: 15px;
 }
 
 .btn__red:hover {
   background: radial-gradient(100% 100% at 50.26% 0%, #ffc581 0%, #f43131 100%)
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
   opacity: 0.9;
   box-shadow: 0px 2px 30px rgba(175, 19, 19, 0.7);
   border-radius: 15px;
@@ -453,28 +465,32 @@ h3.green {
 
 .btn__green {
   background: radial-gradient(100% 100% at 50.26% 0%, #72ff5b 0%, #148c00 100%)
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
   box-shadow: 0px 4px 10px rgba(19, 175, 53, 0.3);
   border-radius: 15px;
 }
 
 .btn__green:hover {
   background: radial-gradient(100% 100% at 50.26% 0%, #abff8d 0%, #26d20b 100%)
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
   opacity: 0.9;
   box-shadow: 0px 2px 30px rgba(19, 175, 53, 0.5);
 }
 
 .btn__blue {
   background: radial-gradient(100% 100% at 50.26% 0%, #a0d7ef 0%, #228bed 100%)
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
   box-shadow: 0px 4px 10px rgba(19, 138, 175, 0.3);
   border-radius: 15px;
 }
 
 .btn__blue:hover {
   background: radial-gradient(100% 100% at 50.26% 0%, #c7eeff 0%, #5cb1ff 100%)
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
   opacity: 0.9;
   box-shadow: 0px 2px 30px rgba(19, 138, 175, 0.5);
   border-radius: 15px;
@@ -492,7 +508,8 @@ h3.green {
   /* Light Green radial */
 
   background: radial-gradient(100% 100% at 50.26% 0%, #abff8d 0%, #26d20b 100%)
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -539,7 +556,8 @@ h3.green {
   /* Light Green radial */
 
   background: radial-gradient(100% 100% at 50.26% 0%, #abff8d 0%, #26d20b 100%)
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -566,7 +584,8 @@ h3.green {
   /* Light Green radial */
 
   background: radial-gradient(100% 100% at 50.26% 0%, #abff8d 0%, #26d20b 100%)
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -642,7 +661,8 @@ h3.green {
   /* Blue Radial */
 
   background: radial-gradient(100% 100% at 50.26% 0%, #a0d7ef 0%, #228bed 100%)
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -661,8 +681,7 @@ h3.green {
   line-height: 140%;
 }
 
-.section_04 {
-}
+.section_04 {}
 
 .section_04 .container {
   background: url("../img/girl-bg.jpg");
@@ -708,7 +727,8 @@ h3.green {
 
 .section_04 .accordion-header a {
   background: radial-gradient(100% 100% at 50.26% 0%, #e1ff8d 0%, #acd117 100%)
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -756,7 +776,8 @@ h3.green {
 
 .label_box .symbol {
   background: radial-gradient(100% 100% at 50.26% 0%, #a0d7ef 0%, #228bed 100%)
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -812,7 +833,8 @@ h3.green {
 
 .review__name {
   background: radial-gradient(100% 100% at 50.26% 0%, #e1ff8d 0%, #acd117 100%)
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -907,8 +929,7 @@ h3.green {
   background: #fff;
 }
 
-.section_06 {
-}
+.section_06 {}
 
 .section_06 .container {
   background: url("../img/man-bg2.png"), #131313;
@@ -945,12 +966,11 @@ h3.green {
 .num__box {
   width: 120px;
   height: 140px;
-  background: radial-gradient(
-      100% 100% at 50.26% 0%,
+  background: radial-gradient(100% 100% at 50.26% 0%,
       rgba(0, 165, 201, 0.9) 0%,
-      rgba(0, 66, 126, 0.9) 100%
-    )
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+      rgba(0, 66, 126, 0.9) 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
   border-radius: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -963,7 +983,8 @@ h3.green {
 
 .num__box .num {
   background: radial-gradient(100% 100% at 50.26% 0%, #a0d7ef 0%, #228bed 100%)
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1049,7 +1070,8 @@ h3.green {
 
 .mobile_menu__text {
   background: radial-gradient(100% 100% at 50.26% 0%, #e1ff8d 0%, #acd117 100%)
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1127,7 +1149,8 @@ h3.green {
 
 .control {
   background: radial-gradient(100% 100% at 50.26% 0%, #767676 0%, #5a5a5a 100%)
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
   padding: 14px 18px;
   gap: 10px;
   width: 80px;
@@ -1152,7 +1175,8 @@ h3.green {
 
 .control:hover {
   background: radial-gradient(100% 100% at 50.26% 0%, #e1ff8d 0%, #acd117 100%)
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
 }
 
 .cart_text__side a {
@@ -1238,7 +1262,8 @@ h3.green {
 
 .all_discount p span {
   background: radial-gradient(100% 100% at 50.26% 0%, #e1ff8d 0%, #acd117 100%)
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1313,7 +1338,8 @@ h3.green {
 
 .form_copyright a {
   background: radial-gradient(100% 100% at 50.26% 0%, #e1ff8d 0%, #acd117 100%)
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

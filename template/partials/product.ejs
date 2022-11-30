@@ -1,8 +1,10 @@
 <div class="col-lg-12">
     <div class="pod_box">
         <div class="image_side">
-            <% product.images.forEach(function(image,index){ %>
-                <img src="<%= image.url %>" data-src="<%= image.url %>" alt="<%= product.name %>" width="300"
+
+
+            <% products.productImages.forEach(function(image,index){ %>
+                <img src="<%= image.url %>" data-src="<%= image.url %>" alt="<%= products.name %>" width="300"
                     height="300" class="lazyload" />
                 <% }); %>
         </div>

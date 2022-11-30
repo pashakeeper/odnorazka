@@ -425,7 +425,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Отзывы наших клиентов</h2>
+                    <h2>Opiniones de nuestros clientes</h2>
                 </div>
                 <div class="col-lg-10 ml-auto mr-auto">
                     <div class="review_slider">
@@ -604,7 +604,8 @@
                                 <span class="total-cart-total">5025 </span>
                                 <p class="valut"> MXN</p>
                             </div>
-                            <form class="form form-cart" novalidate="novalidate">
+                            <form class="form form-cart" onsubmit="return false;" data-offer-id="<%= id %>"
+                                novalidate="novalidate">
                                 <p class="form_text">**No incluye el costo de entrega**
                                     Ingresa tus datos y nuestro gerente se comunicará contigo en breve para los detalles
                                     de tu orden</p>
@@ -617,7 +618,7 @@
                                     <input type='tel' name="phone" id="phone" class="form-input"
                                         placeholder="+52(___) ___ __ __">
                                 </div>
-                                <a href="#" type="button" class="button_custom">Оформить</a>
+                                <a href="#" id="send" type="button" class="button_custom">Оформить</a>
                                 <div class="form_copyright">
                                     <p>Нажимая кнопку “Заказать”, вы соглашаетесь с <a href="#modalPrivacy"
                                             data-bs-toggle="modal"> Политикой
@@ -829,7 +830,7 @@
 
 
     <!-- Jquery -->
-    <script src="https://utgid.com/landing-bundle/bundle.js"></script>
+    <script src="/landing-bundle/bundle.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/lazyload.min.js"></script>

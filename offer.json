@@ -1,87 +1,186 @@
 {
-	"id": 150,
-	"advertiserId": 1,
-	"offerName": "showcase Air Glow + e-Sigs",
-	"offerDescription": "showcase Air Glow + ",
-	"offerCategory": 5,
-	"geo": 1,
-	"language": 230,
-	"currency": 484,
-	"baseRate": "7",
-	"rewardModel": 2,
-	"hold": 15,
-	"bannedSources": [
-		8,
-		5,
-		2
-	],
-	"offerStatus": 4,
-	"deliveryTypes": [
-		1
-	],
-	"paymentMethods": [
-		1
-	],
-	"comments": "",
-	"products": [
-		{
-			"id": 95,
-			"name": "Air Glow + Banana Ice",
-			"description": "Banana Ice",
-			"recommendedSalePrice": "670",
-			"productCode": "",
-			"ownerOrganizationId": 1,
-			"category": 5,
-			"imgUrl": "/template/img/banana_ice1.png",
-			"attributes": "[]",
-			"salePrice": "670"
-		},
-		{
-			"id": 96,
-			"name": "Air Glow + Pina Colada",
-			"description": "Pina Colada",
-			"recommendedSalePrice": "670",
-			"productCode": "",
-			"ownerOrganizationId": 1,
-			"category": 5,
-			"attributes": "[]",
-			"salePrice": "670"
-		},
-		{
-			"id": 97,
-			"name": "Air Glow + Watermelon Ice",
-			"description": "Watermelon Ice",
-			"recommendedSalePrice": "670",
-			"productCode": "",
-			"ownerOrganizationId": 1,
-			"category": 5,
-			"attributes": "[]",
-			"salePrice": "670"
-		},
-		{
-			"id": 98,
-			"name": "Air Glow + Cool Mint",
-			"description": "Cool Mint",
-			"recommendedSalePrice": "670",
-			"productCode": "",
-			"ownerOrganizationId": 1,
-			"category": 5,
-			"attributes": "[]",
-			"salePrice": "670"
-		},
-		{
-			"id": 99,
-			"name": "Air Glow + Guava Ice",
-			"description": "Guava Ice",
-			"recommendedSalePrice": "670",
-			"productCode": "",
-			"ownerOrganizationId": 1,
-			"category": 5,
-			"attributes": "[]",
-			"salePrice": "670"
-		}
-	],
-	"ownerOrganizationId": 1,
-	"totalOrders": 0,
-	"isPrivate": true
+  "id": 150,
+  "advertiserId": 1,
+  "offerName": "showcase Air Glow + e-Sigs",
+  "offerDescription": "showcase Air Glow + ",
+  "offerCategory": 5,
+  "geo": 1,
+  "language": 230,
+  "currency": 484,
+  "baseRate": "7",
+  "rewardModel": 2,
+  "hold": 15,
+  "bannedSources": [8, 5, 2],
+  "offerStatus": 4,
+  "deliveryTypes": [1],
+  "paymentMethods": [1],
+  "comments": "",
+  "products": [
+    {
+      "id": 95,
+      "name": "Air Glow + Banana Ice",
+      "description": "Banana Ice",
+      "recommendedSalePrice": "670",
+      "productCode": "",
+      "ownerOrganizationId": 1,
+      "category": 5,
+      "attributes": "[]",
+      "salePrice": "670",
+      "productImages": [
+        {
+          "id": 373,
+          "sortOrder": 1,
+          "imageId": "999b3d65-fc83-4a59-954a-c5e5917d0848",
+          "isDefault": false,
+          "url": "https://c.dev.utgid.com/public/999b3d65-fc83-4a59-954a-c5e5917d0848.png"
+        },
+        {
+          "id": 374,
+          "sortOrder": 1,
+          "imageId": "1413208d-78f6-4f3b-a824-1c6df98d8160",
+          "isDefault": false,
+          "url": "https://c.dev.utgid.com/public/1413208d-78f6-4f3b-a824-1c6df98d8160.png"
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "name": "Air Glow + Pina Colada",
+      "description": "Pina Colada",
+      "recommendedSalePrice": "670",
+      "productCode": "",
+      "ownerOrganizationId": 1,
+      "category": 5,
+      "attributes": "[]",
+      "salePrice": "670",
+      "productImages": [
+        {
+          "id": 373,
+          "sortOrder": 1,
+          "imageId": "999b3d65-fc83-4a59-954a-c5e5917d0848",
+          "isDefault": false,
+          "url": "https://c.dev.utgid.com/public/999b3d65-fc83-4a59-954a-c5e5917d0848.png"
+        },
+        {
+          "id": 374,
+          "sortOrder": 1,
+          "imageId": "1413208d-78f6-4f3b-a824-1c6df98d8160",
+          "isDefault": false,
+          "url": "https://c.dev.utgid.com/public/1413208d-78f6-4f3b-a824-1c6df98d8160.png"
+        },
+        {
+          "id": 375,
+          "sortOrder": 1,
+          "imageId": "6f757a62-2e77-4dad-b4ae-9ea086ad3379",
+          "isDefault": false,
+          "url": "https://c.dev.utgid.com/public/6f757a62-2e77-4dad-b4ae-9ea086ad3379.png"
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "name": "Air Glow + Watermelon Ice",
+      "description": "Watermelon Ice",
+      "recommendedSalePrice": "670",
+      "productCode": "",
+      "ownerOrganizationId": 1,
+      "category": 5,
+      "attributes": "[]",
+      "salePrice": "670",
+      "productImages": [
+        {
+          "id": 373,
+          "sortOrder": 1,
+          "imageId": "999b3d65-fc83-4a59-954a-c5e5917d0848",
+          "isDefault": false,
+          "url": "https://c.dev.utgid.com/public/999b3d65-fc83-4a59-954a-c5e5917d0848.png"
+        },
+        {
+          "id": 374,
+          "sortOrder": 1,
+          "imageId": "1413208d-78f6-4f3b-a824-1c6df98d8160",
+          "isDefault": false,
+          "url": "https://c.dev.utgid.com/public/1413208d-78f6-4f3b-a824-1c6df98d8160.png"
+        },
+        {
+          "id": 375,
+          "sortOrder": 1,
+          "imageId": "6f757a62-2e77-4dad-b4ae-9ea086ad3379",
+          "isDefault": false,
+          "url": "https://c.dev.utgid.com/public/6f757a62-2e77-4dad-b4ae-9ea086ad3379.png"
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "name": "Air Glow + Cool Mint",
+      "description": "Cool Mint",
+      "recommendedSalePrice": "670",
+      "productCode": "",
+      "ownerOrganizationId": 1,
+      "category": 5,
+      "attributes": "[]",
+      "salePrice": "670",
+      "productImages": [
+        {
+          "id": 373,
+          "sortOrder": 1,
+          "imageId": "999b3d65-fc83-4a59-954a-c5e5917d0848",
+          "isDefault": false,
+          "url": "https://c.dev.utgid.com/public/999b3d65-fc83-4a59-954a-c5e5917d0848.png"
+        },
+        {
+          "id": 374,
+          "sortOrder": 1,
+          "imageId": "1413208d-78f6-4f3b-a824-1c6df98d8160",
+          "isDefault": false,
+          "url": "https://c.dev.utgid.com/public/1413208d-78f6-4f3b-a824-1c6df98d8160.png"
+        },
+        {
+          "id": 375,
+          "sortOrder": 1,
+          "imageId": "6f757a62-2e77-4dad-b4ae-9ea086ad3379",
+          "isDefault": false,
+          "url": "https://c.dev.utgid.com/public/6f757a62-2e77-4dad-b4ae-9ea086ad3379.png"
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "name": "Air Glow + Guava Ice",
+      "description": "Guava Ice",
+      "recommendedSalePrice": "670",
+      "productCode": "",
+      "ownerOrganizationId": 1,
+      "category": 5,
+      "attributes": "[]",
+      "salePrice": "670",
+      "productImages": [
+        {
+          "id": 373,
+          "sortOrder": 1,
+          "imageId": "999b3d65-fc83-4a59-954a-c5e5917d0848",
+          "isDefault": false,
+          "url": "https://c.dev.utgid.com/public/999b3d65-fc83-4a59-954a-c5e5917d0848.png"
+        },
+        {
+          "id": 374,
+          "sortOrder": 1,
+          "imageId": "1413208d-78f6-4f3b-a824-1c6df98d8160",
+          "isDefault": false,
+          "url": "https://c.dev.utgid.com/public/1413208d-78f6-4f3b-a824-1c6df98d8160.png"
+        },
+        {
+          "id": 375,
+          "sortOrder": 1,
+          "imageId": "6f757a62-2e77-4dad-b4ae-9ea086ad3379",
+          "isDefault": false,
+          "url": "https://c.dev.utgid.com/public/6f757a62-2e77-4dad-b4ae-9ea086ad3379.png"
+        }
+      ]
+    }
+  ],
+  "ownerOrganizationId": 1,
+  "totalOrders": 0,
+  "isPrivate": true
 }
