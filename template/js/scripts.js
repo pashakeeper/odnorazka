@@ -93,10 +93,10 @@ $(document).ready(function () {
     //     return false;
     // });
 
-    // $('.js-checkout').on('click', function (event) {
-    //     $('.popup-cart').addClass('popup-cart--checkout');
-    //     return false;
-    // });
+    $('.js-checkout').on('click', function (event) {
+        $('.popup-cart').addClass('popup-cart--checkout');
+        return false;
+    });
 
 
     $.fn.selectRange = function (start, end) {

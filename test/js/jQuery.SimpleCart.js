@@ -109,7 +109,7 @@
 					var $image = $('<img width="90px" height="90px" src="' + image + '"/>').css({ "position": "fixed", "z-index": "999", "top": eTop + "px", "left": eLeft + "px" });
 					$(this).parents('.products-item').prepend($image);
 				} else {
-					var eTop = $(this).parents('.popup-product').offset().top() - $(window).scrollTop();
+					var eTop = $(this).parents('.popup-product').offset().top - $(window).scrollTop();
 					var eLeft = $(this).parents('.popup-product').offset().left;
 					var $image = $('<img width="90px" height="90px" src="' + image + '"/>').css({ "position": "fixed", "z-index": "999", "top": eTop + "px", "left": eLeft + "px" });
 					$(this).parents('.popup-product').prepend($image);

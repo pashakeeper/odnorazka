@@ -1,11 +1,9 @@
 <div class="col-lg-12">
     <div class="pod_box">
         <div class="image_side">
-
-
             <% products.productImages.forEach(function(image,index){ %>
-                <img src="<%= image.url %>" data-src="<%= image.url %>" alt="<%= products.name %>" width="300"
-                    height="300" class="lazyload" />
+                <img src="<%= image.url %>" data-src="<%= image.url %>" alt="<%= products.name %>" width="250"
+                    height="250" class="lazyload" />
                 <% }); %>
         </div>
         <div class="text_side">
@@ -23,9 +21,13 @@
                         <li><span>3,2</span>ml</li>
                         <li><span>5%</span>salt nic</li>
                     </ul>
+                    <p class="market_text">Compra 10 piezas al <span>25%</span> de descuento y ahorra
+                        desde
+                        <span>1675 </span>MXN!
+                    </p>
                 </div>
                 <div class="col-lg-6">
-                    <p class="price_title">Coste:</p>
+                    <p class="price_title">Costo de 1pc:</p>
                     <p class="pod_box__price"><span>
                             <%= products.salePrice %>
                         </span>MXN</p>
@@ -34,7 +36,8 @@
                         data-name="<%= products.name.replace('[F]','').replace('[M]','') %>"
                         data-price="<%= parseInt(Number(products.salePrice)) %>"
                         data-sale-price="<%= parseInt(Number(products.recommendedSalePrice)) %>" data-info=""
-                        data-value="" data-count="1">Agregar al carrito</a>
+                        data-value="" data-count="1" data-image="<%= products.productImages[0]?.url %>">Agregar al
+                        carrito</a>
                 </div>
             </div>
         </div>

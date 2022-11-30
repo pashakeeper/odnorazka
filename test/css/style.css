@@ -296,8 +296,19 @@ h1 {
   font-size: 36px;
 }
 
-.desc .percent {
-  text-decoration: line-through;
+.desc .percent:nth-child(2) {
+  position: relative;
+}
+
+.desc .percent:nth-child(2):after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: radial-gradient(100% 100% at 50.26% 0%, #abff8d 0%, #26d20b 100%);
+  left: 0;
+  top: 50%;
+  z-index: 2;
 }
 
 .odnorazka_box {
@@ -607,9 +618,7 @@ h3.green {
   font-size: 12px;
 }
 
-.section_02 .button_custom:hover {
-  max-width: 186px;
-}
+.section_02 .button_custom:hover {}
 
 .section_03 .container {
   background: url("../img/man-bg.png");
@@ -815,7 +824,7 @@ h3.green {
   padding: 0 30px 54px 30px;
   max-width: 290px;
   width: 100%;
-  height: 300px;
+  height: auto;
   margin: 0 25px;
   margin-top: 75px;
   /* Black BG */
@@ -1111,6 +1120,8 @@ h3.green {
 
 .cart_img {
   margin-right: 20px;
+  width: 90px;
+  height: 90px;
 }
 
 .cart_text__side h5 {
@@ -1382,6 +1393,10 @@ h3.green {
 }
 
 @media (max-width: 991px) {
+  .text_side p {
+    width: 50%;
+  }
+
   .mobile_close_text {
     display: flex;
   }
@@ -1410,6 +1425,26 @@ h3.green {
   h2 {
     font-size: 24px;
     text-align: center !important;
+
+  }
+
+  .section_03 h2 {
+    line-height: 1.5;
+  }
+
+  .section_04 .accordion-header a {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .section_04 .accordion-header a.collapsed img {
+    position: absolute;
+    right: 20px;
+
+  }
+
+  .label_box p {
+    text-align: center;
   }
 
   .header {
@@ -1558,5 +1593,26 @@ h3.green {
   .last_label__box {
     height: auto;
     margin-top: -60px;
+  }
+
+  .desc .percent:nth-child(2):after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background: radial-gradient(100% 100% at 50.26% 0%, #abff8d 0%, #26d20b 100%);
+    top: 70%;
+    z-index: 2;
+    display: block;
+    right: 127px;
+    left: unset;
+  }
+
+  .footer {
+    height: auto;
+  }
+
+  .footer_links li {
+    margin-top: 10px;
   }
 }
